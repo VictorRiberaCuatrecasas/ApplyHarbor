@@ -1,0 +1,17 @@
+{
+  "name": "@applyharbor/api",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier . --check",
+    "format:write": "prettier . --write",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0",
+    "typescript": "^5.4.0"
+  }
+}
