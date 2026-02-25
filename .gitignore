@@ -1,0 +1,91 @@
+# Ignore private / scratch documentation
+docs/docs-ignore/
+
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+
+.idea/
+*.iml
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------------------------
+# Node / Package managers
+# -------------------------
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+
+# -------------------------
+# Environment files (never commit secrets)
+# Keep *.example committed.
+# -------------------------
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# -------------------------
+# Build outputs (generic)
+# -------------------------
+dist/
+build/
+out/
+.tmp/
+temp/
+.cache/
+coverage/
+.nyc_output/
+
+# -------------------------
+# Nuxt (apps/web)
+# -------------------------
+.nuxt/
+.output/
+.nitro/
+.vercel/
+.netlify/
+
+# -------------------------
+# Fastify / TS runtime artifacts
+# -------------------------
+*.pid
+*.seed
+*.pid.lock
+
+# -------------------------
+# Prisma
+# -------------------------
+# DO NOT ignore prisma/schema.prisma or prisma/migrations 
+# Ignore local sqlite or generated artifacts 
+prisma/*.db
+prisma/*.db-journal
+
+# -------------------------
+# Docker local overrides
+# -------------------------
+docker-compose.override.yml
+
+# -------------------------
+# Misc
+# -------------------------
+*.swp
+*.swo
+*.swn

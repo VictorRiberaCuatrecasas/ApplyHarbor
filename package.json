@@ -1,0 +1,20 @@
+{
+  "name": "applyharbor",
+  "private": true,
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "lint": "pnpm -r run lint",
+    "format": "pnpm -r run format",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.0"
+  }
+}
