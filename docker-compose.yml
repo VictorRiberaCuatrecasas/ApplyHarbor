@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: applyharbor-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: applyharbor
+      POSTGRES_PASSWORD: applyharbor
+      POSTGRES_DB: applyharbor
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
